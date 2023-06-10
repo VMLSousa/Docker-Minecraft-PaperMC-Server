@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get install -y curl jq
 
 LABEL Marc Tönsing <marc@marc.tv>
 
-ARG version=1.19.4
+ARG version=1.20
 
 
 ########################################################
@@ -50,7 +50,7 @@ EXPOSE 25565/tcp
 EXPOSE 25565/udp
 
 # Set memory size
-ARG memory_size=1G
+ARG memory_size=3G
 ENV MEMORYSIZE=$memory_size
 
 # Set Java Flags
